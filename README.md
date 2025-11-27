@@ -2,16 +2,15 @@
 
 Asterinas 操作系统已经支持 LoongArch64 架构。
 
-Asterinas 项目在 2025年发布的 v0.16.0 版本中，明确将新增对 LoongArch 架构的支持列为其核心功能之一。
+Asterinas 项目在 2025年发布的 v0.16.0 版本中，明确将新增对 LoongArch 架构的支持列为其核心功能之一。---- ai得出，最后应该进行测试
 
- ---- ai说明，最后应该进行测试得出
+ 
 
 https://github.com/oscomp/asterinas/blob/main/Makefile  ---- 这是asterinas的源makefiles
 
 
 https://github.com/oscomp/testsuits-for-oskernel/tree/pre-2025 ----这是大赛官方给予的测试项目
-	
-	一共12个包括basic、busybox、lua、libctest、iozone、unixbench、iperf、libcbench、lmbench、netperf、cyclictest和LTP共12组测试题目
+	共12个包括basic、busybox、lua、libctest、iozone、unixbench、iperf、libcbench、lmbench、netperf、cyclictest和LTP共12组测试题目
 	
 
 https://github.com/oscomp/oskernel-testsuits-cooperation/tree/master ----对上述每个测试题目，需给出题目描述、编译方法、样例输出、评分依据四个部分的测例题目说明信息
@@ -41,28 +40,30 @@ Asterinas 内核应该自动运行测试，无需用户交互
 
 
 
-步骤1：克隆测试套件
-bash
-# 在asterinas同级目录
-/path/to/your/workspace/
-├── asterinas/                    # 你的内核项目
-└── testsuits-for-oskernel/       # 测试套件仓库
-步骤2：改造 Asterinas 的 Makefile
-makefile
-# 在 asterinas/Makefile 中添加：
-TESTSUIT_DIR := ../testsuits-for-oskernel
-all: kernel-rv kernel-la testsuit disk.img
-testsuit:
-	$(MAKE) -C $(TESTSUIT_DIR) -f Makefile.sub all
-disk.img: testsuit
-	# 创建包含测试程序的磁盘镜像
-步骤3：进行测试
-bash
-# 在 asterinas 目录中
-make all      # 编译内核+测试程序
-make run      # 启动测试（内核自动执行测试）
-
-
-
 根据源makefile和大赛提供的测试题的makefile进行修改：使用linux的make
+
+#步骤一：克隆测试套件
+
+在asterinas同级目录
+	
+/path/to/your/workspace/
+
+├── asterinas/                    # 你的内核项目
+
+└── testsuits-for-oskernel/       # 测试套件仓库
+
+#步骤2：改造 Asterinas 的 Makefile
+
+	等待改造----
+
+
+#步骤3：进行测试
+
+bash
+
+在 asterinas 目录中
+	
+make all      # 编译内核+测试程序
+
+make run      # 启动测试（内核自动执行测试）
 
