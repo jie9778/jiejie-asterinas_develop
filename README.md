@@ -1,4 +1,4 @@
-
+# asterinas基于大赛测试样例的改造
 
 Asterinas 操作系统已经支持 LoongArch64 架构。
 
@@ -42,7 +42,7 @@ Asterinas 内核应该自动运行测试，无需用户交互
 
 根据源makefile和大赛提供的测试题的makefile进行修改：使用linux的make
 
-#步骤一：克隆测试套件
+## 步骤一：克隆测试套件
 
 在asterinas同级目录
 	
@@ -52,12 +52,12 @@ Asterinas 内核应该自动运行测试，无需用户交互
 
 └── testsuits-for-oskernel/       # 测试套件仓库
 
-#步骤2：改造 Asterinas 的 Makefile
+## 步骤2：改造 Asterinas 的 Makefile
 
 	等待改造----
 
 
-#步骤3：进行测试
+## 步骤3：进行测试
 
 bash
 
