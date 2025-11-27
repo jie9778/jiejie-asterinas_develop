@@ -1,5 +1,3 @@
-<img width="1818" height="2858" alt="image" src="https://github.com/user-attachments/assets/22925e8b-867e-4444-bb6a-a224df514631" />      asterinas基于大赛测试样例的改造
-
 
 
 Asterinas 操作系统已经支持 LoongArch64 架构。
@@ -31,7 +29,7 @@ https://github.com/oscomp/oskernel-testsuits-cooperation/tree/master ----对上�
 - 构建工具 (make, cmake)
 - 包管理器 (apt, yum)
 - 完整的 Shell 工具集
-<img width="1454" height="2286" alt="deepseek_mermaid_20251127_52e095" src="https://github.com/user-attachments/assets/938d2f55-b878-4dae-996f-c860b75f6602" />
+<img width="1454" height="1700" alt="deepseek_mermaid_20251127_52e095" src="https://github.com/user-attachments/assets/938d2f55-b878-4dae-996f-c860b75f6602" />
 
 
 
