@@ -29,7 +29,7 @@ https://github.com/oscomp/oskernel-testsuits-cooperation/tree/master ----对上�
 - 构建工具 (make, cmake)
 - 包管理器 (apt, yum)
 - 完整的 Shell 工具集
-<img width="1454" height="1700" alt="deepseek_mermaid_20251127_52e095" src="https://github.com/user-attachments/assets/938d2f55-b878-4dae-996f-c860b75f6602" />
+<img width="500" height="700" alt="deepseek_mermaid_20251127_52e095" src="https://github.com/user-attachments/assets/938d2f55-b878-4dae-996f-c860b75f6602" />
 
 
 
