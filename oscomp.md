@@ -9,7 +9,7 @@
 
 本项目是 **OSCOMP (全国大学生计算机系统能力大赛 - 操作系统设计赛)** 的参赛作品。
 
-我们的核心目标是为 **Asterinas** 操作系统内核实现 **Linux Native AIO (Legacy AIO)** 支持。具体工作包括实现 `io_setup`、`io_submit`、`io_getevents` 等关键系统调用，填补 Asterinas 在异步 I/O 领域的空白，使其能够支持 MySQL、Oracle 等依赖原生 AIO 的高性能应用。
+我们的核心目标是为 **Asterinas** 操作系统内核实现 **Linux Native AIO (Legacy AIO)** 支持。具体工作包括实现 `io_setup`、`io_submit`、`io_getevents` 等关键系统调用，填补 Asterinas 在异步 I/O 领域的空白，使其能够支持 MySQL等依赖原生 AIO 的高性能应用。
 
 ---
 
