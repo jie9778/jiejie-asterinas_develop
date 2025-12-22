@@ -78,6 +78,7 @@ ls -lh mnt/
 Bash
 
 sudo umount mnt
+
 rmdir mnt
 
 # 第四步：启动验证
