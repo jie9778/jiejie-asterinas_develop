@@ -95,7 +95,7 @@ cd ~/Workspace/asterinas
 
 Bash
 
-make run-riscv
+make run OSDK_TARGET_ARCH=rsicv64
 ## 4. 内核中验证 进入 Asterinas Shell 后：
 
 Bash
