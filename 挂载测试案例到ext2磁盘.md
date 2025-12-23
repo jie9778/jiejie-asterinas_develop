@@ -1,10 +1,10 @@
-这是一个非常好的想法！直接替换 asterinas 自带的 ext2.img 是最“原生”的做法。
+# 前置条件：
 
-这样做的好处是：你不需要修改 Makefile。构建系统会以为它还是原来的磁盘，但实际上它的容量已经变大了，而且里面装满了你的测试数据。
+## 克隆官方测试集仓库，按照编译方法，得到执行文件sdcard
 
-请按照以下步骤操作：
 
-# 第一步：删除旧的 mnt_temp
+
+# 第一步：删除旧的 mnt(若之前无挂载无需进行--跳转到第二部步）
 由于之前这个目录非空，rmdir 删不掉。我们需要用 rm -rf 强制删除。
 
 请在 ~/Workspace/asterinas 目录下执行：
@@ -12,13 +12,13 @@
 Bash
 
 ## 1. 为了安全，先确保它没有被挂载
-sudo umount mnt_temp 2>/dev/null
+sudo umount mnt 2>/dev/null
 
 ## 2. 强制删除该目录及其内容
-rm -rf mnt_temp
+rm -rf mnt
 
 ## 验证是否删除
-ls -d mnt_temp
+ls -d mnt
 
 如果提示 "无法访问...: 没有那个文件或目录"，说明删除成功
 
