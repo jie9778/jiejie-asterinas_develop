@@ -2,6 +2,8 @@
 
 ## 克隆官方测试集仓库，按照编译方法，得到执行文件sdcard
 
+https://github.com/oscomp/testsuits-for-oskernel/tree/pre-2025  -- oscomp测试仓库
+
 
 
 # 第一步：删除旧的 mnt(若之前无挂载无需进行--跳转到第二部步）
